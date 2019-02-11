@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="choose_from_array">choose from array</string>
+    <string name="text_for_check">yourTextHere</string>
+    <string name="select_place">Указать город</string>
+    <string name="temperature">Температура</string>
+    <string name="wind">Ветер</string>
+    <string name="choose_criterias">Выбери показатели:</string>
+    <string name="choose_place">Выбери место</string>
+</resources>

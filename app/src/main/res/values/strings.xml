@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Weather_for_wizards</string>
+    <string name="whoAreYouToday">Кто ты сегодня?</string>
+
+    <!-- Wizards-->
+    <string name="evilMagician">Злой колдун</string>
+    <string name="kindMagician">Добрый волшебник</string>
+    <string name="witch">Ведьма</string>
+
+    <!--<string-array name="characters">-->
+    <!--<item>Злой волшебник</item>-->
+    <!--<item>Добрый волшебник</item>-->
+    <!--<item>Ведьма</item>-->
+    <!--</string-array>-->
+
+    <!-- Titles for wizards-->
+
+    <string name="evilMagicianTitle">Что будем захватывать?</string>
+    <string name="kindMagicianTitle">Где ищем Фродо?</string>
+    <string name="witchTitle">Куда летим на шабаш?</string>
+
+    <!--<string-array name="titlesForCharacters">-->
+    <!--<item>Что будем захватывать?</item> &lt;!&ndash; для злого &ndash;&gt;-->
+    <!--<item>Где ищем Фродо?</item> &lt;!&ndash; для доброго&ndash;&gt;-->
+    <!--<item>Куда летим на шабаш?</item> &lt;!&ndash; для ведьмы &ndash;&gt;-->
+    <!--</string-array>-->
+
+    <!-- Question for wizards-->
+
+    <string name="questionEvilFirst">Уже завоевал?</string>
+    <string name="questionEvilSecond">Есть что ценное?</string>
+    <string name="questionKindFirst">Там ли Фродо?</string>
+    <string name="questionKindSecond">Есть ли орки?</string>
+    <string name="questionWitchFirst">Есть ли шабаш?</string>
+    <string name="questionWitchSecond">Летная ли погода?</string>
+
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+
+
+
+
+    <string-array name="places">
+        <item>Хогвартс</item>
+        <item>Мордор</item>
+        <item>Нарния</item>
+    </string-array>
+
+    <string name="text_for_check">yourTextHere</string>
+    <string name="select_place">Указать место</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="temperature">Температура</string>
+    <string name="wind">Ветер</string>
+    <string name="choose_criterias">Выбери показатели:</string>
+    <string name="choose_place">Выбери место</string>
+
+
+</resources>

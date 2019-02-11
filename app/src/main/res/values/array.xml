@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="charactersImage">
+        <item>@drawable/character_evil_magician</item> <!-- для злого -->
+        <item>@drawable/character_kind_magician</item> <!-- для доброго-->
+        <item>@drawable/character_witch</item> <!-- для ведьмы -->
+    </integer-array>
+
+    <integer-array name="backgroundsImage">
+        <item>@drawable/backgrounds_evil</item> <!-- для злого -->
+        <item>@drawable/backgrounds_kind</item> <!-- для доброго-->
+        <item>@drawable/backgrounds_witch</item> <!-- для ведьмы -->
+    </integer-array>
+
+    <integer-array name="themeCharacter">
+        <item>@style/ThemeEvil</item> <!-- для злого -->
+        <item>@style/ThemeKind</item> <!-- для доброго-->
+        <item>@style/ThemeWitch</item> <!-- для ведьмы -->
+    </integer-array>
+
+    <integer-array name="placesImage">
+        <item>@drawable/places_hogwarts</item> <!-- Хогвартс -->
+        <item>@drawable/places_mordor</item> <!-- Мордор -->
+        <item>@drawable/places_narnia</item> <!-- Нарния -->
+    </integer-array>
+
+
+
+</resources>

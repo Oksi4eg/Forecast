@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="9"
+    tools:context=".FragmentPlaceInfo">
+
+    <TextView
+        android:id="@+id/fragment_place_info_name"
+        style="@style/TextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/text_for_check" />
+
+    <ImageView
+        android:id="@+id/fragment_place_info_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4" />
+
+    <FrameLayout
+        android:id="@+id/city_info_selection_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/city_info_question_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start" />
+
+        <TextView
+            android:id="@+id/city_info_result_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/city_info_selection_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/city_info_question_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start" />
+
+        <TextView
+            android:id="@+id/city_info_result_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/city_info_selection_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/temperature" />
+
+        <TextView
+            android:id="@+id/city_info_result_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/city_info_selection_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/wind" />
+
+        <TextView
+            android:id="@+id/city_info_result_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

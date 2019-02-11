@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounds_begin"
+    tools:context=".MainActivity">
+
+
+    <fragment
+        android:id="@+id/characters_info"
+        android:name="com.oksana.trubina.weather_for_wizards.FragmentCharactersInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>
