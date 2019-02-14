@@ -9,9 +9,10 @@ public class SecondActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        currentParcelCharacter = (int) getIntent().getIntExtra(ParcelFirst.PARCEL_CHARACTER,
+        currentParcelCharacter = (int) getIntent().getIntExtra(ParcelCharacter.PARCEL_CHARACTER,
                 currentParcelCharacter);
-        setTheme(ParcelFirst.charactersTheme[currentParcelCharacter]);
+        setTheme(ParcelCharacter.charactersTheme[currentParcelCharacter]);
         setContentView(R.layout.second_activity);
     }
+
 }

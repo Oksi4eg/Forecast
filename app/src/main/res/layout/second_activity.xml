@@ -4,9 +4,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <fragment
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:name="com.oksana.trubina.weather_for_wizards.FragmentPlacesList"/>
+        android:layout_height="match_parent">
 
+        <fragment
+            android:id="@+id/places"
+            android:name="com.oksana.trubina.weather_for_wizards.PlacesListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
 </LinearLayout>

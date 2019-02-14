@@ -14,12 +14,12 @@ public class MainMap extends AppCompatActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        currentParcelCharacter = (int) getIntent().getIntExtra(ParcelFirst.PARCEL_CHARACTER,
+        currentParcelCharacter = (int) getIntent().getIntExtra(ParcelCharacter.PARCEL_CHARACTER,
                 currentParcelCharacter);
-        setTheme(ParcelFirst.charactersTheme[currentParcelCharacter]);
+        setTheme(ParcelCharacter.charactersTheme[currentParcelCharacter]);
         setContentView(R.layout.activity_main_map);
         TextView t = findViewById(R.id.title_for_wizard);
-        t.setText(ParcelFirst.charactersTitle[currentParcelCharacter]);
+        t.setText(ParcelCharacter.charactersTitle[currentParcelCharacter]);
 
         Button b = findViewById(R.id.button_choose_place);
         b.setOnClickListener(this);
@@ -27,7 +27,7 @@ public class MainMap extends AppCompatActivity implements View.OnClickListener {
 
     public void onClick (View v){
         Intent intent = new Intent(MainMap.this, SecondActivity.class);
-        intent.putExtra(ParcelFirst.PARCEL_CHARACTER, currentParcelCharacter);
+        intent.putExtra(ParcelCharacter.PARCEL_CHARACTER, currentParcelCharacter);
         startActivity(intent);
 
     }

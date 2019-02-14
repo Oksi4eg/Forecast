@@ -11,21 +11,21 @@ import android.widget.TextView;
 import java.util.Random;
 
 
-public class FragmentPlaceInfo extends Fragment {
+public class PlaceInfoFragment extends Fragment {
 
     int temperature = new Random().nextInt(100) - 50;
     int wind = new Random().nextInt(20);
     String temperatureValue = String.valueOf(temperature + "°C");
     String windValue = String.valueOf(wind + " м/с");
-    Integer[] yesNo = {R.string.yes,R.string.no};
+    Integer[] yesNo = {R.string.yes, R.string.no};
     int yesNoRandom = new Random().nextInt(1);
 
-    public static FragmentPlaceInfo init(Parcel parcel) {
-        FragmentPlaceInfo f = new FragmentPlaceInfo();    // создание
+    public static PlaceInfoFragment init(Parcel parcel) {
+        PlaceInfoFragment f = new PlaceInfoFragment();    // создание
 
         // передача параметра
         Bundle args = new Bundle();
-        args.putSerializable(Parcel.PARCEL_CHARACTER_AND_PLACE, parcel);
+        args.putSerializable(Parcel.PARCEL_PLACE, parcel);
         f.setArguments(args);
         return f;
     }
@@ -44,12 +44,12 @@ public class FragmentPlaceInfo extends Fragment {
 
         TextView questionFirst = layout.findViewById(R.id.city_info_question_1);
         TextView questionSecond = layout.findViewById(R.id.city_info_question_2);
-        int character = parcel.getIdOfCharacter();
 
-        if(character==0){
+        int character = SecondActivity.currentParcelCharacter; // так можно???
+        if (character == 0) {
             questionFirst.setText(Parcel.evilCheckBoxes[0]);
             questionSecond.setText(Parcel.evilCheckBoxes[1]);
-        } else if (character==1) {
+        } else if (character == 1) {
             questionFirst.setText(Parcel.kindCheckBoxes[0]);
             questionSecond.setText(Parcel.kindCheckBoxes[1]);
         } else {
@@ -67,21 +67,15 @@ public class FragmentPlaceInfo extends Fragment {
         result4.setText(windValue);
 
 
-
-
-
-
-
-
-
         return layout;
 
     }
 
     public Parcel getParcel() {
-        Parcel parcel = (Parcel) getArguments().getSerializable(Parcel.PARCEL_CHARACTER_AND_PLACE);
+        Parcel parcel = (Parcel) getArguments().getSerializable(Parcel.PARCEL_PLACE);
         return parcel;
     }
+
 
 
 }

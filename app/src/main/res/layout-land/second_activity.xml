@@ -6,15 +6,18 @@
     android:weightSum="2">
 
     <fragment
-        android:layout_weight="1"
-        android:layout_width="match_parent"
+        android:id="@+id/places"
+        android:name="com.oksana.trubina.weather_for_wizards.PlacesListFragment"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:name="com.oksana.trubina.weather_for_wizards.FragmentPlacesList"/>
+        android:layout_weight="1" />
 
-    <fragment
-        android:layout_weight="1"
-        android:layout_width="match_parent"
+    <FrameLayout
+        android:id="@+id/fragment_place_info"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:name="com.oksana.trubina.weather_for_wizards.FragmentPlaceInfo"
-        android:id="@+id/fragment_place_info"/>
+        android:layout_weight="1">
+
+    </FrameLayout>
+
 </LinearLayout>
