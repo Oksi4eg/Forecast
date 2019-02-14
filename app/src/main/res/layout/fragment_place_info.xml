@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="9"
-    tools:context=".FragmentPlaceInfo">
+    tools:context=".PlaceInfoFragment">
 
     <TextView
         android:id="@+id/fragment_place_info_name"

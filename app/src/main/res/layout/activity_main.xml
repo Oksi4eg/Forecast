@@ -9,7 +9,7 @@
 
     <fragment
         android:id="@+id/characters_info"
-        android:name="com.oksana.trubina.weather_for_wizards.FragmentCharactersInfo"
+        android:name="com.oksana.trubina.weather_for_wizards.CharactersInfoFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

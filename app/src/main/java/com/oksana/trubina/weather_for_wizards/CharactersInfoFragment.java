@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 
-public class FragmentCharactersInfo extends Fragment {
+public class CharactersInfoFragment extends Fragment {
 
     public static int currentParcelCharacter = 0;
 
@@ -43,7 +43,7 @@ public class FragmentCharactersInfo extends Fragment {
                     currentParcelCharacter = 2;
                     break;
             }
-            intent.putExtra(ParcelFirst.PARCEL_CHARACTER,currentParcelCharacter);
+            intent.putExtra(ParcelCharacter.PARCEL_CHARACTER,currentParcelCharacter);
             startActivity(intent);
         }
     };
@@ -65,17 +65,17 @@ public class FragmentCharactersInfo extends Fragment {
         Button button2 = view.findViewById(R.id.button_character_second);
         Button button3 = view.findViewById(R.id.button_character_third);
 
-        button.setText(ParcelFirst.characters[0]);
-        button2.setText(ParcelFirst.characters[1]);
-        button3.setText(ParcelFirst.characters[2]);
+        button.setText(ParcelCharacter.characters[0]);
+        button2.setText(ParcelCharacter.characters[1]);
+        button3.setText(ParcelCharacter.characters[2]);
 
         ImageView image = view.findViewById(R.id.image_character_first);
         ImageView image2 = view.findViewById(R.id.image_character_second);
         ImageView image3 = view.findViewById(R.id.image_character_third);
 
-        image.setImageResource(ParcelFirst.charactersImage[0]);
-        image2.setImageResource(ParcelFirst.charactersImage[1]);
-        image3.setImageResource(ParcelFirst.charactersImage[2]);
+        image.setImageResource(ParcelCharacter.charactersImage[0]);
+        image2.setImageResource(ParcelCharacter.charactersImage[1]);
+        image3.setImageResource(ParcelCharacter.charactersImage[2]);
 
 
         button.setOnClickListener(onClickListener);

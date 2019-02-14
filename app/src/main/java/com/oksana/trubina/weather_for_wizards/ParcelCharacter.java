@@ -2,7 +2,7 @@ package com.oksana.trubina.weather_for_wizards;
 
 import java.io.Serializable;
 
-final class ParcelFirst implements Serializable {
+final class ParcelCharacter implements Serializable {
 
 //    Resources res = Resources.getSystem(); не работает со статикой :(
 
@@ -20,7 +20,7 @@ final class ParcelFirst implements Serializable {
     private final int idOfCharacter;
 
 
-    public ParcelFirst(int idOfCharacter) {
+    public ParcelCharacter(int idOfCharacter) {
         this.idOfCharacter = idOfCharacter;
     }
 
@@ -31,10 +31,3 @@ final class ParcelFirst implements Serializable {
     }
 
 }
-//        int[] arrayBackgrounds = getResources().getIntArray(R.array.backgroundsImage);
-//
-//        Integer[] backgroundForWizard = new Integer[arrayBackgrounds.length];
-//        int i = 0;
-//        for (int value : arrayBackgrounds) {
-//            backgroundForWizard[i++] = value;
-//        }
